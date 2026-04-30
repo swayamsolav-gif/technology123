@@ -1,8 +1,3 @@
-FROM  ubuntu:24.04
-WORKDIR /app
-RUN  apt-get update && apt-get install -y \ 
-     curl \
-     git \
-     && rm -rf  /var/lib/apt/lists/*
-COPY  *   *
-CMD ["echo" , "Lavatech image build successfully!"]
+FROM ubuntu
+RUN apt update
+CMD ["echo", "Hello Docker"]
