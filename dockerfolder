@@ -1,2 +1,2 @@
-FROM  alpine
-CMD ["echo",  "Build successful!"]
+docker build -t test-image .
+docker run test-image
