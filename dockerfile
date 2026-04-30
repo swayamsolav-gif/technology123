@@ -4,5 +4,5 @@ RUN  apt-get update && apt-get install -y \
      curl \
      git \
      && rm -rf  /var/lib/apt/lists/*
-COPY  file1 file2  /app/
+COPY  *   *
 CMD ["echo" , "Lavatech image build successfully!"]
