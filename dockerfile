@@ -1,5 +1,5 @@
 FROM  ubuntu:24.04
-WORKIR /app
+WORKDIR /app
 RUN  apt-get update && apt-get install -y \ 
      curl \
      git \
